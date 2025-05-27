@@ -88,34 +88,13 @@ h3 {
     margin: 1.5rem 0 1rem;
 }
 
-/* Cat info section */
-.cat-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: center;
+h4 {
+    font-size: 1.2rem;
+    color: #2d3436;
+    margin: 1.2rem 0 0.8rem;
 }
 
-.cat-image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Video section */
-.video-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-video {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* K-pop section */
+/* K-pop content */
 .kpop-content {
     display: flex;
     flex-direction: column;
@@ -175,6 +154,16 @@ video {
     margin-bottom: 0.5rem;
 }
 
+.industry-info {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.industry-info p {
+    margin-bottom: 1.5rem;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -192,10 +181,6 @@ footer {
 
     nav ul {
         gap: 1rem;
-    }
-
-    .cat-info {
-        grid-template-columns: 1fr;
     }
 
     main {
