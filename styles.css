@@ -82,6 +82,12 @@ h2 {
     font-size: 2rem;
 }
 
+h3 {
+    font-size: 1.5rem;
+    color: #2d3436;
+    margin: 1.5rem 0 1rem;
+}
+
 /* Cat info section */
 .cat-info {
     display: grid;
@@ -107,6 +113,66 @@ video {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* K-pop section */
+.kpop-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.kpop-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.artist {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.artist:hover {
+    transform: translateY(-5px);
+}
+
+.artist-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.artist h3 {
+    color: #ff6b6b;
+    margin: 1rem 0;
+}
+
+.kpop-features {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.kpop-features ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+.kpop-features li {
+    margin-bottom: 0.5rem;
 }
 
 /* Footer */
@@ -138,5 +204,9 @@ footer {
 
     .section {
         padding: 1rem;
+    }
+
+    .artist-grid {
+        grid-template-columns: 1fr;
     }
 } 
